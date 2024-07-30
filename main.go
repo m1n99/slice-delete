@@ -7,7 +7,7 @@ import (
 func Delete[T any](src []T, index int) ([]T, T, error) {
 	// 源数组长度
 	length := len(src)
-	// 校验所要删除的下表是否合法
+	// 校验所要删除的下标是否合法
 	if index < 0 || index >= length {
 		// 定义零值
 		var zero T
